@@ -13,12 +13,12 @@ import {
   Router,
   RouterProvider,
 } from "react-router-dom";
-import Layout from './Components/Layout'
+import Layout from './Components/Layout/Layout'
 
 function App() {
   const routerList = createBrowserRouter(
     createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/" element={<Layout/>}>
      <Route path="/" element={<Home/>}/>
     
     </Route> )
