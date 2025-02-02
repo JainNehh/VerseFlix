@@ -1,6 +1,6 @@
 import React from 'react'
 import Signin from '../Authentication/Signin'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 function Header() {
   const navigate= useNavigate()
@@ -11,12 +11,12 @@ function Header() {
       </div>
       <div className='flex gap-5 items-center'>
         <ul className='text-white flex gap-9 '>
-            <li>Home</li>
-            <li>About</li>
-            <li>ContactUs</li>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/contact">ContactUs</NavLink>
             
         </ul>
-        <button className='hover:bg-[#ffffff23] p-1.5 rounded-2xl' onClick={()=>Signin()}>SignIn</button>
+        <NavLink to="/signin" className='hover:bg-[#ffffff23] p-1.5 rounded-2xl'>SignIn</NavLink>
       </div>
     </div>
   )

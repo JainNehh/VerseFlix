@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Signin() {
   return (
@@ -29,7 +30,7 @@ function Signin() {
         <input type="password" placeholder='Enter Password'className='bg-[#ffffff1f] p-3 rounded-2xl w-[60%]'></input>
       </div>
 
-      <button  className='bg-indigo-300 p-2 text-black rounded-2xl font-bold w-[10%]'>SignUp</button>
+      <NavLink to="/login" className='bg-indigo-300 p-2 text-black rounded-2xl font-bold w-[10%]'>SignUp</NavLink>
     </div>
   )
 }

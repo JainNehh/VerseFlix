@@ -16,6 +16,8 @@ import {
 import Layout from './Components/Layout/Layout'
 import Signin from './Components/Authentication/Signin'
 import Login from './Components/Authentication/Login'
+import Aboutus from './Components/About/Aboutus'
+import Contact from './Components/Contact/Contact'
 
 function App() {
   const routerList = createBrowserRouter(
@@ -24,6 +26,8 @@ function App() {
      <Route path="/" element={<Home/>}/>
      <Route path="/signin" element={<Signin/>}/>
      <Route path="/login" element={<Login/>}/>
+     <Route path="/about" element={<Aboutus/>}/>
+     <Route path="/contact" element={<Contact/>}/>
     </Route> )
   );
 
