@@ -14,12 +14,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Layout from './Components/Layout/Layout'
+import Signin from './Components/Authentication/Signin'
 
 function App() {
   const routerList = createBrowserRouter(
     createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
      <Route path="/" element={<Home/>}/>
+     <Route path="/signin" element={<Signin/>}/>
     
     </Route> )
   );
