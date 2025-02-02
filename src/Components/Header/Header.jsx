@@ -1,6 +1,9 @@
 import React from 'react'
+import Signin from '../Authentication/Signin'
+import { useNavigate } from 'react-router-dom'
 
 function Header() {
+  const navigate= useNavigate()
   return (
     <div className='flex justify-between  bg-[#83818122] p-3.5 items-center'>
       <div>
@@ -13,7 +16,7 @@ function Header() {
             <li>ContactUs</li>
             
         </ul>
-        <button className='hover:bg-[#ffffff23] p-1.5 rounded-2xl'>SignIn</button>
+        <button className='hover:bg-[#ffffff23] p-1.5 rounded-2xl' onClick={()=>Signin()}>SignIn</button>
       </div>
     </div>
   )

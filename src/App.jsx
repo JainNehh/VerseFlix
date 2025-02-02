@@ -15,6 +15,7 @@ import {
 } from "react-router-dom";
 import Layout from './Components/Layout/Layout'
 import Signin from './Components/Authentication/Signin'
+import Login from './Components/Authentication/Login'
 
 function App() {
   const routerList = createBrowserRouter(
@@ -22,7 +23,7 @@ function App() {
     <Route path="/" element={<Layout/>}>
      <Route path="/" element={<Home/>}/>
      <Route path="/signin" element={<Signin/>}/>
-    
+     <Route path="/login" element={<Login/>}/>
     </Route> )
   );
 
