@@ -18,7 +18,7 @@ function Actorname() {
 {
     data?.map((item,key)=>{
         return  <div>
-        <img className='h-[150px] w-[150px] rounded-full aspect-square' src={item.src} alt="loading.." />
+        <img className='h-[200px] w-[200px] rounded-full aspect-square' src={item.src} alt="loading.." />
        </div>
     })
 }
